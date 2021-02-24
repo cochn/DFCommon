@@ -14,7 +14,6 @@
 		1113C3931D3CD79500880520 /* DFBaseListDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1113C3921D3CD79500880520 /* DFBaseListDataService.m */; };
 		115193A81C7ABB340089013B /* DFLogoRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 115193A71C7ABB340089013B /* DFLogoRefreshControl.m */; };
 		115193AA1C7ADB2C0089013B /* check_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 115193A91C7ADB2C0089013B /* check_success@2x.png */; };
-		116462DE40C1E88567E88FEA /* libPods-DFCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C682EC391EA5E410E9113826 /* libPods-DFCommon.a */; };
 		1173E5421C722036004C9979 /* press_btn_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1173E5401C722036004C9979 /* press_btn_green@2x.png */; };
 		1173E5431C722036004C9979 /* press_btn_green@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1173E5411C722036004C9979 /* press_btn_green@3x.png */; };
 		1173E54B1C722059004C9979 /* DFVideoCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1173E5461C722059004C9979 /* DFVideoCaptureController.m */; };
@@ -76,6 +75,7 @@
 		11E157C51BC0C3EA00F2F99A /* RRDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157C41BC0C3EA00F2F99A /* RRDevice.m */; };
 		11E157CB1BC8BD8E00F2F99A /* MLLinkClickLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157CA1BC8BD8E00F2F99A /* MLLinkClickLabel.m */; };
 		11F080421BD54CCC0084DAA3 /* DFTabIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F080411BD54CCC0084DAA3 /* DFTabIndicatorView.m */; };
+		C65BFB62DE2EC7209C10E728 /* Pods_DFCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF5AC9A690E6300318AB852 /* Pods_DFCommon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -201,9 +201,9 @@
 		11E157CA1BC8BD8E00F2F99A /* MLLinkClickLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLinkClickLabel.m; sourceTree = "<group>"; };
 		11F080401BD54CCC0084DAA3 /* DFTabIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTabIndicatorView.h; sourceTree = "<group>"; };
 		11F080411BD54CCC0084DAA3 /* DFTabIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTabIndicatorView.m; sourceTree = "<group>"; };
+		1BF5AC9A690E6300318AB852 /* Pods_DFCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF6E1ADB27AC8DC9B861988 /* Pods-DFCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFCommon.release.xcconfig"; path = "Pods/Target Support Files/Pods-DFCommon/Pods-DFCommon.release.xcconfig"; sourceTree = "<group>"; };
 		8F6D7AC33A34268E00A31830 /* Pods-DFCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFCommon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DFCommon/Pods-DFCommon.debug.xcconfig"; sourceTree = "<group>"; };
-		C682EC391EA5E410E9113826 /* libPods-DFCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DFCommon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D581281BDB20DE00704C9E /* lame.framework in Frameworks */,
-				116462DE40C1E88567E88FEA /* libPods-DFCommon.a in Frameworks */,
+				C65BFB62DE2EC7209C10E728 /* Pods_DFCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,7 +585,7 @@
 		89F40810A98DA49E15EC364A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C682EC391EA5E410E9113826 /* libPods-DFCommon.a */,
+				1BF5AC9A690E6300318AB852 /* Pods_DFCommon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -602,7 +602,6 @@
 				110FA2771AF3FEF900771420 /* Frameworks */,
 				110FA2781AF3FEF900771420 /* Resources */,
 				7FEA9FB91AF6472438D0BF06 /* [CP] Embed Pods Frameworks */,
-				072130CD6BE5FFE8039F9E10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -675,34 +674,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		072130CD6BE5FFE8039F9E10 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DFCommon/Pods-DFCommon-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7FEA9FB91AF6472438D0BF06 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DFCommon/Pods-DFCommon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJPhotoBrowser/MJPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MLLabel/MLLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/MMPopupView/MMPopupView.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ODRefreshControl/ODRefreshControl.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/YLGIFImage/YLGIFImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMPopupView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ODRefreshControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLGIFImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DFCommon/Pods-DFCommon-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DFCommon/Pods-DFCommon-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CF042CBB044FBE29559A358D /* [CP] Check Pods Manifest.lock */ = {
@@ -711,13 +722,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DFCommon-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

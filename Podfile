@@ -4,13 +4,13 @@ use_frameworks!
 target 'DFCommon' do
 pod 'AFNetworking'
 pod 'SDWebImage'
-pod 'FMDB', '2.5'
+pod 'FMDB'
 pod 'MBProgressHUD'
-pod 'MLLabel', '1.7'
+pod 'MLLabel'
 
 pod 'MJRefresh'
-pod 'ODRefreshControl', '~> 1.2'
-pod 'MJPhotoBrowser', '~> 1.0.2'
+pod 'ODRefreshControl'
+pod 'MJPhotoBrowser'
 
 pod 'MMPopupView'
 pod 'TZImagePickerController'
