@@ -2,13 +2,13 @@ platform :ios, '7.0'
 use_frameworks!
 
 target 'DFCommon' do
-pod 'AFNetworking', '~> 3.0.0'
-pod 'SDWebImage', '~> 3.7.3'
+pod 'AFNetworking'
+pod 'SDWebImage'
 pod 'FMDB', '2.5'
-pod 'MBProgressHUD', '~> 0.9.1'
+pod 'MBProgressHUD'
 pod 'MLLabel', '1.7'
 
-pod 'MJRefresh', '~> 3.1.0'
+pod 'MJRefresh'
 pod 'ODRefreshControl', '~> 1.2'
 pod 'MJPhotoBrowser', '~> 1.0.2'
 
