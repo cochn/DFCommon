@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   # s.platform     = :ios
   s.platform     = :ios, "7.0"
 
+  s.source       = { :git => "git@github.com:cochn/DFCommon.git", :tag => s.version.to_s  }
 
-  s.source       = { :git => "https://github.com/anyunzhong/DFCommon.git", :tag => "1.5.0" }
 
   s.source_files  = "DFCommon/DFCommon/**/*.{h,m}"
 
