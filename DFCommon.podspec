@@ -27,14 +27,14 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
 
-  s.dependency 'AFNetworking', '~> 3.0.0'
-  s.dependency 'SDWebImage', '~> 3.7.3'
-  s.dependency 'FMDB', '2.5'
-  s.dependency 'MBProgressHUD', '~> 0.9.1'
-  s.dependency 'MLLabel', '1.7'
+  s.dependency 'AFNetworking'
+  s.dependency 'SDWebImage'
+  s.dependency 'FMDB'
+  s.dependency 'MBProgressHUD'
+  s.dependency 'MLLabel'
 
   #s.dependency 'EGOTableViewPullRefresh', '~> 0.1.0'
-  s.dependency 'MJRefresh', '~> 3.1.0'
+  s.dependency 'MJRefresh'
   s.dependency 'ODRefreshControl', '~> 1.2'
   s.dependency 'MJPhotoBrowser', '~> 1.0.2'
   s.dependency 'MMPopupView'
