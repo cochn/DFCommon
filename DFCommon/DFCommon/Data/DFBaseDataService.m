@@ -74,14 +74,14 @@
         case DFRequestTypeGet:
         {
             
-            [_manager GET:[self getRequestUrl] parameters:_params progress:PROGRESS_BLOCK success:SUCCESS_BLOCK failure:FAILURE_BLOCK];
+            [_manager GET:[self getRequestUrl] parameters:_params headers:nil progress:PROGRESS_BLOCK success:SUCCESS_BLOCK failure:FAILURE_BLOCK];
             break;
         }
             
         case DFRequestTypePost:
         {
             
-            [_manager POST:[self getRequestUrl] parameters:_params progress:PROGRESS_BLOCK success:SUCCESS_BLOCK failure:FAILURE_BLOCK];
+            [_manager POST:[self getRequestUrl] parameters:_params headers:nil progress:PROGRESS_BLOCK success:SUCCESS_BLOCK failure:FAILURE_BLOCK];
             break;
         }
         case DFRequestTypePostMultipart:
@@ -91,7 +91,7 @@
                 return;
             }
             
-            [_manager POST:[self getRequestUrl] parameters:_params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+            [_manager POST:[self getRequestUrl] parameters:_params headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                 
                 [formData appendPartWithFileData:data name:@"file" fileName:[NSString stringWithFormat:@"foo.%@",[self getFileType]] mimeType:[NSString stringWithFormat:@"image/%@",[self getFileType]]];
             } progress:PROGRESS_BLOCK success:SUCCESS_BLOCK failure:FAILURE_BLOCK];

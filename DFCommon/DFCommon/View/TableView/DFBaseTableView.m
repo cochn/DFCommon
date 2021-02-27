@@ -283,8 +283,8 @@
     hud.mode = MBProgressHUDModeText;
     hud.animationType = MBProgressHUDAnimationFade;
     hud.removeFromSuperViewOnHide = YES;
-    hud.labelText = text;
-    [hud hide:YES afterDelay:second];
+    hud.label.text = text;
+    [hud hideAnimated:YES afterDelay:second];
 }
 
 
@@ -300,7 +300,7 @@
     hud.mode = MBProgressHUDModeIndeterminate;
     hud.animationType = MBProgressHUDAnimationFade;
     hud.removeFromSuperViewOnHide = YES;
-    hud.labelText = text;
+    hud.label.text = text;
     hud.square = YES;
     return hud;
 }
@@ -329,10 +329,10 @@
     [[UIApplication sharedApplication].keyWindow addSubview:hud];
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
     hud.mode = MBProgressHUDModeCustomView;
-    hud.labelText = text;
+    hud.label.text = text;
     hud.square = YES;
-    [hud show:YES];
-    [hud hide:YES afterDelay:3];
+    [hud showAnimated:YES];
+    [hud hideAnimated:YES afterDelay:3];
     
 }
 
