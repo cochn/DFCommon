@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "AFNetworking.h"
 #import "DFBaseResponse.h"
-
+#import <AFNetworking/AFNetworking.h>
 
 typedef enum:NSUInteger
 {

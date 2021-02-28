@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MLLabel.h"
-#import "MLLinkLabel.h"
-
+#import <MLLabel/MLLabel.h>
+#import <MLLabel/MLLinkLabel.h>
 @interface MLLabel (Size)
 
 +(CGSize) getViewSize:(NSAttributedString *)attributedText maxWidth:(CGFloat) maxWidth font:(UIFont *) font lineHeight:(CGFloat) lineHeight lines:(NSUInteger)lines;

@@ -6,8 +6,7 @@
 //  Copyright (c) 2015年 Datafans, Inc. All rights reserved.
 //
 
-#import "MLLabel+Size.h"
-
+#import <MLLabel+Size.h>
 @implementation MLLabel (Size)
 
 

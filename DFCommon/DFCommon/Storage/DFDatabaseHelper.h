@@ -7,9 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-#import "FMDB.h"
-
+#import <FMDB/FMDB.h>
 @interface DFDatabaseHelper : NSObject
 
 +(FMDatabase *) sharedDatabase:(NSString *) name;
