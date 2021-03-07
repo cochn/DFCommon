@@ -39,6 +39,7 @@ Pod::Spec.new do |s|
   s.dependency 'MJPhotoBrowser', '~> 1.0.2'
   s.dependency 'MMPopupView'
   s.dependency 'TZImagePickerController'
+  s.dependency 'lame'
 
   s.vendored_frameworks = "DFCommon/DFCommon/Lib/lame/lame.framework"
 
