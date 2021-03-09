@@ -351,22 +351,16 @@
 -(UIBarButtonItem *) leftBarButtonItem
 {
     
-    NSArray *controllers = self.navigationController.viewControllers;
-    NSString *title = nil;
-    for (UIViewController *controller in controllers) {
-        if (controller == self) {
-            break;
-        }
-        title = controller.title;
-    }
-    if (title == nil) {
-        if (controllers.count > 1) {
-            title = @"返回";
-        }else{
-            return  nil;
-        }
-    }
-    return [UIBarButtonItem back:title selector:@selector(onBack:) target:self];
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    backBtn.frame = CGRectMake(0, 0, 34, 44);
+    [backBtn addTarget:self action:@selector(onBack:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIImageView *imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 11, 22, 22)];
+    imageV.image = [UIImage imageNamed:@"my_fh"];
+    [backBtn addSubview:imageV];
+    
+    UIBarButtonItem *btnItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    return btnItem;
 }
 
 -(UIBarButtonItem *)defaultReturnBarButtonItem
