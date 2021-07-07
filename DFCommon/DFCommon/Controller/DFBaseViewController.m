@@ -55,9 +55,10 @@
     
     self.view.backgroundColor = BaseViewColor;
     
-    
-    if ([self leftBarButtonItem] != nil) {
-        self.navigationItem.leftBarButtonItem = [self leftBarButtonItem];
+    if (self.navigationController.viewControllers.count > 1) {
+        if ([self leftBarButtonItem] != nil) {
+            self.navigationItem.leftBarButtonItem = [self leftBarButtonItem];
+        }
     }
     
     

@@ -76,7 +76,7 @@
 + (NSString *)FormatTime:(NSString *)format timeInterval:(double)value;
 {
     NSDateFormatter *dateformatter = [[NSDateFormatter alloc] init];
-    NSDate *date = [NSDate dateWithTimeIntervalSince1970:value / 1000];
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:(value / 1000)];
     [dateformatter setDateFormat:format];
     return [dateformatter stringFromDate:date];
 }
